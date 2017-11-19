@@ -1,5 +1,5 @@
 {
-  "name": "iagolex",
+  "name": "TiagoLex",
   "version": "1.0.0",
   "description": "Chat",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/TiagoLex/ThiagoLEX-Chat.git"
   },
-  "author": " (Santiago Recalde CEO y Alexander Mejia CEO)",
+  "author": " Santiago Recalde CEO y Alexander Mejia CEO",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TiagoLex/ThiagoLEX-Chat/issues"
