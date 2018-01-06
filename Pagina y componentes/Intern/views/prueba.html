@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="TiagoLex">
+    <meta name="description" content="Pagina para brindar el servcion de chat el linea de una manera anonima sin la necesidad de registrarse">
+    <title>Operation</title>
+    <!-- Icono -->
+    <link rel="shortcut icon" href="../Img/67.ico" />
+    <!-- Dependencias -->
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <!-- Angular.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="../js/route.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-lig ht justify-content-between navbar-header">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="../Img/67.ico" width="30" height="30" class="d-inline-block align-top" alt=""> TiagoLex
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#/emoji">
+                            Emoji
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#/tipoemoji">
+                            Tipo de Emoji
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#/sala">
+                            Sala de chat
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ng-view">
+        Proximamente Datos Desde la web services
+    </div>
+</body>
+
+</html>

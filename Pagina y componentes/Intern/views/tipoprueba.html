@@ -1,0 +1,71 @@
+<div class="container">
+    </br>
+    </br>
+    </br>
+    <div class="row">
+        <div class="col s4">
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input required id="tipo" type="text" class="validate" ng-value="tipo.tipo" ng-model="tipo.tipo">
+                        <label for="tipo">Tipo</label>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                <div class="input-field col s12">
+                    <input required id="idTipo" type="text" class="validate" ng-value="tipo.idTipo" ng-model="tipo.idTipo">
+                    <label for="idTipo">Clave</label>
+                </div>
+            </div>  -->
+
+                <div class="row">
+                    <div class="col-s4" ng-if="tipo.idTipo == null">
+                        <button class="btn waves-effect blue" ng-click="agregarT(tipo)">Crear</button>
+                    </div>
+
+                    <div class="col-s4" ng-if="tipo.idTipo != null">
+                        <button class="btn waves-effect blue" ng-click="agregarT(tipo.idTipo)">Crear</button>
+                    </div>
+
+                </div>
+            </form>
+
+
+        </div>
+        <div class="col s8">
+            <input type="text" ng-model="search" placeholder="Buscar">
+
+
+
+            <table class="highlight responsive-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo de Emoji</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody ng-if="datos.length != null">
+                    <tr ng-click="get(data.idTipo)" ng-repeat="data in datos | filter : search">
+                        <td>{{data.idTipo}}</td>
+                        <td>{{data.tipo}}</td>
+                        <td>
+                            <button class="btn btn-small waves-effect red" ng-click="eliminarT(data.idTipo)">eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody ng-if="datos.length == null">
+                    <tr>
+                        <td colspan="4">No hay datos dispobibles</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>

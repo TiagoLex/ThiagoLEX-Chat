@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <p class="panel-title">
+                <span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Agregar Nuevo Tipo de Emoji</p>
+        </div>
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="idTipo">Id:</label>
+                    <input type="text" class="form-control" id="idTipo" ng-model="tipo.idTipo">
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo:</label>
+                    <input type="text" class="form-control" id="tipo" ng-model="tipo.tipo">
+                </div>
+                <button style="color:#20af57;" class="btn btn-default" ng-click="agregarT(tipo)">Guardar</button>
+                <button style="color:#acde5b;" class="btn btn-default" ng-click="actualizarT(tipo)">Actualizar</button>
+                <a href="#/home" class="btn btn-default"> Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="panel panel-default" ng-init="listaT()">
+        <div class="panel-heading">
+            <p class="panel-title">
+                <span style="color:#be0e0e;" class="glyphicon glyphicon-list"> </span> Lista de Tipo de Emoji</p>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Tipo de Emoji</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in datos track by $index">
+                        <td>{{ data.idTipo }}</td>
+                        <td>{{ data.tipo }}</td>
+                        <td>
+                            <a ng-click="" class="btn btn-info"> Info </a>
+                            <button ng-click="" class="btn btn-success">
+                                <span class="glyphicon glyphicon-edit"> </span> Editar </button>
+                            <button ng-click="eliminarT(data.idTipo)" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-trash"> </span> Eliminar </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
